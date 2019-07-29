@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+
+.title-box {
+display: flex;
+justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-box {
+    margin: 20px;
+    height: 35px;
+    width: 265px;
+}
+
+.btn {
+width: 265px;
+height: 25px;
+}
+
+.clue-box {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    border: 1px solid blue;
+    color: blue;
+    font-size: 20px;
+}
