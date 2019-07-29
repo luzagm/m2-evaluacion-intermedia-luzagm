@@ -2,7 +2,6 @@ const button = document.querySelector(".js-btn");
 const input = document.querySelector(".js-text-box");
 const clue = document.querySelector(".js-clue");
 const tries = document.querySelector(".js-tries");
-let numberTries = parseInt(tries);
 
 function game() {
   numberGame();
