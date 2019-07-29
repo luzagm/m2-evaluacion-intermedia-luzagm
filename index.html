@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Examen Modulo 2 (intermedio) </title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Examen Modulo 2 (intermedio)</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+        
+      <div class="title-box">
+        <h1 class="title">ADIVINA EL NÚMERO</h1>
+      </div>
 
-    <div class="title-box">
-    <h1 class="title">ADIVINA EL NÚMERO</h1>
-</div>
+      <div class="tries-box">
+        <h2 class="tries js-tries">0</h2>
+      </div>
+    </div>
 
     <div class="game">
-        <h2>Introduce aquí tu número</h2>
-        <input type="text" class="text-box js-text-box">
-        <input type="button" value="Prueba" class="btn js-btn">
+      <h2>Introduce aquí tu número</h2>
+      <input type="number" class="text-box js-text-box" />
+      <input type="button" value="Prueba" class="btn js-btn" />
     </div>
-    
+
     <div class="clue-box">
-        <p class="clue js-clue">Escribe un número y dale a <em>Prueba</em></p>
+      <p class="clue js-clue">Escribe un número y dale a <em>Prueba</em></p>
     </div>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

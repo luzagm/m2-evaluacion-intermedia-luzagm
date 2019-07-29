@@ -3,11 +3,35 @@ body {
     background-color: lightgrey;
 }
 
+/* .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+} */
+
 .title-box {
+    margin: 20px;
 display: flex;
 justify-content: center;
 }
 
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+.tries-box {
+    position: absolute;
+    margin-left: 90vw;
+}
+
+.tries {
+    margin: 0;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+}
 .game {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,13 @@
 const button = document.querySelector(".js-btn");
 const input = document.querySelector(".js-text-box");
 const clue = document.querySelector(".js-clue");
+const tries = document.querySelector(".js-tries");
+let numberTries = parseInt(tries);
+
+function game() {
+  numberGame();
+  countTries();
+}
 
 function numberGame() {
   const inputValue = parseInt(input.value);
@@ -14,12 +21,18 @@ function numberGame() {
   }
 }
 
+let count = 0;
+function countTries() {
+  count += 1;
+  tries.innerHTML = count;
+}
+
 function getRandomNumber(max) {
   return Math.floor(Math.random() * max);
 }
 
 const randomNumber = getRandomNumber(100);
 
-button.addEventListener("click", numberGame);
+button.addEventListener("click", game);
 
 console.log(`Mi número aleatorio es ${randomNumber}`);
