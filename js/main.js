@@ -18,16 +18,20 @@ function game(event) {
 function numberGame() {
   const inputValue = parseInt(input.value);
 
-  if (inputValue === null) {
-    clue.innerHTML = `Escribe un número, por favor`;
+  const updateClue = function(text) {
+    clue.innerHTML = text;
+  };
+
+  if (input.value === "") {
+    updateClue("Escribe un número, por favor");
   } else if (inputValue < 0 || inputValue > 100) {
-    clue.innerHTML = `Escribe un número entre 1 y 100`;
+    updateClue("Escribe un número entre 0 y 100");
   } else if (inputValue === randomNumber) {
-    clue.innerHTML = `¡Has ganado, campeona!`;
+    updateClue("¡Has ganado, campeona!");
   } else if (inputValue > randomNumber) {
-    clue.innerHTML = `Demasiado alto`;
+    updateClue("Demasiado alto");
   } else {
-    clue.innerHTML = `Demasiado bajo`;
+    updateClue("Demasiado bajo");
   }
 }
 
@@ -43,6 +47,7 @@ function getRandomNumber(max) {
 function resetGame() {
   tries.innerHTML = 0;
   input.value = "";
+  clue.innerHTML = "Escribe un número y dale a <em>Prueba</em>";
 }
 
 button.addEventListener("click", game);

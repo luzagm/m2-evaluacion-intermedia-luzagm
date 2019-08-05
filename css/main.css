@@ -3,8 +3,15 @@ body {
     background-color: lightgrey;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
@@ -13,19 +20,30 @@ body {
 .title {
     margin: 0;
     text-align: center;
+    font-size: 40px;
 }
 
 .tries {
     margin: 0;
     color: red;
-    font-size: 100px;
+    font-size: 60px;
     text-align: center;
 }
 
+.label__text {
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 265px;
+}
+
 .reset-button {
-    height: 50px;
-    width: 80px;
-    font-size: 18px;
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
 }
 .game {
     display: flex;
@@ -42,8 +60,9 @@ body {
 }
 
 .btn {
-width: 265px;
+width: 100px;
 height: 25px;
+font-size: 16px;
 }
 
 .clue-box {
@@ -53,4 +72,5 @@ height: 25px;
     border: 1px solid blue;
     color: blue;
     font-size: 20px;
+    width: 40%;
 }

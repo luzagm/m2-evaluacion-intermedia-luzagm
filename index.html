@@ -8,21 +8,28 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <section class="container">
     <div class="header">
-          <button type="button" class="reset-button js-reset" value="Reset">Reset</button>
-        <h1 class="title">Adivina el número</h1>
-        <h2 class="tries js-tries">0</h2>   
+      <h1 class="title">Adivina el número</h1>
+      <h2 class="tries js-tries">0</h2>
     </div>
 
     <form class="game">
-      <label for="input-number">Introduce aquí tu número</label>
+      <label for="input-number" class="label__text">Introduce aquí tu número</label>
       <input id="input-number" type="number" class="text-box js-text-box" />
-      <input type="submit" value="¡Dale!" class="btn js-btn"/>
+      <div class="buttons">
+        <input type="submit" value="¡Dale!" class="btn js-btn" />
+        <button type="button" class="reset-button js-reset" value="Reset">
+          Reiniciar
+        </button>
+      </div>
     </form>
 
     <div class="clue-box">
       <p class="clue js-clue">Escribe un número y dale a <em>Prueba</em></p>
     </div>
+  </section>
     <script src="js/main.js"></script>
+
   </body>
 </html>
