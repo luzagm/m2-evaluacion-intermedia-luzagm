@@ -3,17 +3,11 @@ body {
     background-color: lightgrey;
 }
 
-/* .header {
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
-} */
-
-.title-box {
-    margin: 20px;
-display: flex;
-justify-content: center;
+    margin: 50px;
 }
 
 .title {
@@ -21,16 +15,17 @@ justify-content: center;
     text-align: center;
 }
 
-.tries-box {
-    position: absolute;
-    margin-left: 90vw;
-}
-
 .tries {
     margin: 0;
     color: red;
     font-size: 100px;
     text-align: center;
+}
+
+.reset-button {
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
 }
 .game {
     display: flex;
